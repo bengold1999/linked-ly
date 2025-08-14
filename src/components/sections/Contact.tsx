@@ -68,8 +68,8 @@ export function Contact() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
-      username: "/in/bengoldberger"
+      href: "https://www.linkedin.com/in/ben-goldberger-290b8b23a/",
+      username: "/in/ben-goldberger-290b8b23a"
     }
   ];
 
@@ -81,7 +81,7 @@ export function Contact() {
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Let's discuss your next project or collaboration opportunity
+            Let's discuss your next project, collaboration opportunity, or tech art consultation
           </p>
         </div>
 
@@ -93,7 +93,8 @@ export function Contact() {
               <p className="text-muted-foreground leading-relaxed mb-8">
                 I'm always interested in hearing about new opportunities, 
                 collaborations, or just having a chat about technology and innovation. 
-                Don't hesitate to reach out!
+                Whether you need web development, tech art solutions, AI automation, or procedural tools, 
+                I'd love to discuss how we can work together!
               </p>
             </div>
 

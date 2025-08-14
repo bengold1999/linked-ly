@@ -5,40 +5,60 @@ import { Badge } from '@/components/ui/badge';
 export function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with advanced features including real-time inventory, payment processing, and admin dashboard.",
+      title: "Procedural Asset Pipeline",
+      description: "Built an AI-assisted procedural asset generation system using ComfyUI and Unreal Engine, reducing asset creation time by 70% for game development teams.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+      technologies: ["Unreal Engine", "ComfyUI", "Python", "PCG", "AI Pipelines"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true,
-      year: "2023"
+      year: "2024"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative project management tool with real-time updates, team collaboration features, and analytics dashboard.",
+      title: "Real-time Shader System",
+      description: "Developed a comprehensive shader library and material system for Unity, featuring procedural generation, performance optimization, and real-time rendering capabilities.",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=500&fit=crop",
-      technologies: ["Vue.js", "Express", "Socket.io", "MongoDB"],
+      technologies: ["Unity", "HLSL", "Shader Graph", "Procedural Generation", "Performance"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true,
+      year: "2024"
+    },
+    {
+      title: "AI Content Automation Platform",
+      description: "Created an N8N-based automation platform that integrates with ComfyUI, streamlining AI-assisted content creation workflows for creative teams.",
+      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=500&fit=crop",
+      technologies: ["N8N", "ComfyUI", "API Integration", "Python", "Automation"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true,
       year: "2023"
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts, interactive maps, and historical data visualization.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=500&fit=crop",
-      technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API"],
+      title: "3D Asset Management System",
+      description: "Built a web-based 3D asset management platform with procedural generation tools, texture baking workflows, and asset pipeline optimization.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
+      technologies: ["React", "Node.js", "Blender API", "Substance Painter", "MongoDB"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false,
-      year: "2022"
+      year: "2023"
     },
     {
-      title: "Portfolio CMS",
-      description: "A headless CMS built specifically for developer portfolios with markdown support and dynamic content management.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
-      technologies: ["Next.js", "Sanity", "Tailwind CSS", "Vercel"],
+      title: "VAT Animation Pipeline",
+      description: "Developed a Vertex Animation Texture pipeline for Unreal Engine, enabling efficient character animation with reduced memory usage and improved performance.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
+      technologies: ["Unreal Engine", "VAT", "Animation", "Performance", "Shader Development"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+      year: "2023"
+    },
+    {
+      title: "Procedural Camera System",
+      description: "Created an intelligent camera system for Unity with procedural movement, cinematic sequences, and dynamic framing for interactive experiences.",
+      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=500&fit=crop",
+      technologies: ["Unity", "C#", "Camera Systems", "Procedural Generation", "Cinematics"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false,
@@ -57,7 +77,7 @@ export function Projects() {
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A showcase of my recent work, demonstrating expertise across the full development stack
+            A showcase of my work across tech art, AI automation, procedural tools, and full-stack development
           </p>
         </div>
 

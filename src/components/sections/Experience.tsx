@@ -7,49 +7,64 @@ export function Experience() {
 
   const experiences = [
     {
-      title: "Senior Full-Stack Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      duration: "2022 - Present",
+      title: "Technical Artist",
+      company: "Technical Artist",
+      location: "Remote",
+      duration: "Oct 2024 - Jun 2025",
       type: "Full-time",
-      description: "Lead developer for enterprise web applications serving 100K+ users. Architected scalable microservices and implemented modern frontend solutions.",
+      description: "Specialized in creating procedural tools and technical art solutions for Unreal Engine projects.",
       achievements: [
-        "Reduced application load time by 40% through performance optimization",
-        "Led a team of 4 developers in migrating legacy systems to React",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Mentored junior developers and conducted code reviews"
+        "Developed procedural tools for asset generation and optimization",
+        "Created technical art solutions for real-time rendering",
+        "Optimized performance for complex 3D scenes",
+        "Collaborated with artists and developers on technical workflows"
       ],
-      technologies: ["React", "Node.js", "TypeScript", "AWS", "PostgreSQL"]
+      technologies: ["Unreal Engine 5", "Blueprints", "Python", "Houdini", "3ds Max"]
     },
     {
-      title: "Frontend Developer",
-      company: "Digital Innovations Inc.",
-      location: "New York, NY",
-      duration: "2020 - 2022",
-      type: "Full-time",
-      description: "Developed responsive web applications and collaborated with design teams to create exceptional user experiences.",
+      title: "3D Generalist",
+      company: "Cinesound Europe SRL",
+      location: "Romania · Remote",
+      duration: "Oct 2023 - Jan 2024",
+      type: "Freelance",
+      description: "Part of a team that developed a teaser trailer for an upcoming film. My role involved building 3D models and rigging as needed, creating and refining animations, and developing and modifying characters, including metahumans.",
       achievements: [
-        "Built 15+ responsive web applications from concept to deployment",
-        "Improved code quality by implementing automated testing suites",
-        "Collaborated with UX/UI designers to implement pixel-perfect designs",
-        "Optimized SEO resulting in 50% increase in organic traffic"
+        "Built 3D models and rigging for film teaser trailer",
+        "Created and refined character animations",
+        "Developed and modified characters including metahumans",
+        "Collaborated with film production team on visual effects"
       ],
-      technologies: ["Vue.js", "JavaScript", "SCSS", "Figma", "Jest"]
+      technologies: ["Unreal Engine", "Metahumans", "3D Modeling", "Rigging", "Animation"]
     },
     {
-      title: "Junior Web Developer",
-      company: "StartupXYZ",
-      location: "Austin, TX",
-      duration: "2019 - 2020",
-      type: "Full-time",
-      description: "Contributed to the development of the company's main product, gaining experience in full-stack development and agile methodologies.",
+      title: "3D Generalist",
+      company: "Uniqa Entertainment",
+      location: "Tel Aviv District, Israel · Remote",
+      duration: "Mar 2023 - Jun 2023",
+      type: "Freelance",
+      description: "Worked on 3D character development and environment creation for entertainment projects.",
       achievements: [
-        "Developed key features for the main product using React and Express",
-        "Participated in daily standups and sprint planning",
-        "Fixed 100+ bugs and implemented user-requested features",
-        "Learned modern development practices and version control"
+        "Developed 3D character models and environments",
+        "Created cartoon-style character designs",
+        "Built game environment assets and structures",
+        "Collaborated with development team on asset pipeline"
       ],
-      technologies: ["React", "Express", "MongoDB", "Git", "Agile"]
+      technologies: ["Character Creator 4", "Blender", "3D Modeling", "Texturing", "Game Development"]
+    },
+    {
+      title: "3D Generalist",
+      company: "Freelance",
+      location: "Remote",
+      duration: "2023",
+      type: "Freelance",
+      description: "Provided 3D generalist services for various clients and projects.",
+      achievements: [
+        "Delivered 3D assets for multiple client projects",
+        "Provided modeling, texturing, and animation services",
+        "Maintained high quality standards across diverse projects",
+        "Built strong client relationships and project management skills"
+      ],
+      technologies: ["3D Modeling", "Texturing", "Animation", "Project Management", "Client Communication"]
     }
   ];
 
@@ -67,6 +82,23 @@ export function Experience() {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Building innovative solutions and growing with amazing teams
           </p>
+        </div>
+
+        {/* LinkedIn CTA */}
+        <div className="card-elegant mb-8">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div className="text-muted-foreground">
+              For the full, up-to-date work history, visit my LinkedIn profile.
+            </div>
+            <a
+              href="https://www.linkedin.com/in/ben-goldberger-290b8b23a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-colors"
+            >
+              View LinkedIn Experience
+            </a>
+          </div>
         </div>
 
         <div className="space-y-6">

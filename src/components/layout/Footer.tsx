@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,9 +13,7 @@ export function Footer() {
               Ben Goldberger
             </div>
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Ben Goldberger. Built with{' '}
-              <Heart className="inline h-4 w-4 text-red-500" />{' '}
-              using React & Tailwind CSS.
+              © {currentYear} Ben Goldberger. Built with React & Tailwind CSS.
             </p>
           </div>
 

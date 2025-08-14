@@ -5,14 +5,23 @@ import { TypewriterText } from '@/components/effects/TypewriterText';
 import { motion } from 'framer-motion';
 import { use3DTilt } from '@/hooks/use3DTilt';
 import heroBg from '@/assets/hero-bg.jpg';
+import webVideo from '@/assets/Video/Web.mp4';
 
 export function Hero() {
 
   const typewriterTexts = [
+    "Tech Artist", 
+    "AI Developer",
+    "Entrepreneur",
+    "Animator",
+    "Procedural Tool Creator",
+    "3D Asset Developer",
+    "Environment Artist",
+    "Unreal Engine Specialist",
     "Full-Stack Developer",
-    "AI Enthusiast", 
-    "Gaming Tech Creator",
-    "Digital Experience Architect"
+    "User-Focused Design",
+    "Continuous Learning",
+    "Tech + Art",
   ];
 
   return (
@@ -23,21 +32,23 @@ export function Hero() {
       {/* Matrix Rain Effect */}
       <div className="absolute inset-0 matrix-bg z-5" />
       
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 z-0 opacity-10"
-        style={{
-          backgroundImage: `url(${heroBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-100"
+      >
+        <source src={webVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       
       {/* Cyberpunk Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background/90 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background/70 via-background/70 to-background/90 z-10" />
       
       {/* Scanning Lines */}
-      <div className="absolute inset-0 z-15 scan-line opacity-20" />
+      <div className="absolute inset-0 z-15 scan-line opacity-10" />
       
       {/* Content */}
       <div className="relative z-20 text-center max-w-4xl mx-auto px-6">
@@ -47,16 +58,16 @@ export function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="tilt-3d"
         >
-          <motion.h1 
-            className="text-5xl md:text-8xl font-bold mb-6 tracking-tight"
-            initial={{ scale: 0.8 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-          >
-            <span className="text-gradient glitch" data-text="Ben Goldberger">
-              Ben Goldberger
-            </span>
-          </motion.h1>
+                     <motion.h1 
+             className="text-5xl md:text-8xl font-bold mb-6 tracking-tight"
+             initial={{ scale: 0.8 }}
+             animate={{ scale: 1 }}
+             transition={{ duration: 1.2, ease: "easeOut" }}
+           >
+             <span className="text-gradient md:glitch" data-text="Ben Goldberger">
+               Ben Goldberger
+             </span>
+           </motion.h1>
           
           <motion.div 
             className="text-xl md:text-3xl text-neon mb-6 font-medium min-h-[2em]"
@@ -80,8 +91,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.8 }}
           >
-            Crafting cutting-edge digital experiences with AI and modern technologies. 
-            Building the future, one line of code at a time.
+            Blending tech, art, and product vision to create experiences that inspire
           </motion.p>
           
           <motion.div 
@@ -106,9 +116,9 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.6, duration: 0.8 }}
           >
-            {[
+            {[ 
               { href: "https://github.com", icon: Github, label: "GitHub Profile" },
-              { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn Profile" },
+              { href: "https://www.linkedin.com/in/ben-goldberger-290b8b23a/", icon: Linkedin, label: "LinkedIn Profile" },
               { href: "mailto:ben@example.com", icon: Mail, label: "Email Contact" }
             ].map(({ href, icon: Icon, label }, index) => (
               <motion.a

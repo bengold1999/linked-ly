@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const navItems = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
+  // { name: 'Tech Art', href: '#tech-art' },
   { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
@@ -34,6 +35,16 @@ export function Header() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
+            <a
+              href="https://www.linkedin.com/in/ben-goldberger-290b8b23a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors duration-200"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -61,6 +72,15 @@ export function Header() {
                   {item.name}
                 </a>
               ))}
+              <a
+                href="https://www.linkedin.com/in/ben-goldberger-290b8b23a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors duration-200 py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                LinkedIn
+              </a>
             </div>
           </nav>
         )}

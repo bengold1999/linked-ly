@@ -3,31 +3,45 @@ import { Badge } from '@/components/ui/badge';
 export function Skills() {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Frontend Development",
       skills: [
-        "React", "TypeScript", "Next.js", "Vue.js", 
-        "Tailwind CSS", "SCSS", "JavaScript ES6+", "HTML5"
+        "React", "Angular", "Vue", "JavaScript", "TypeScript", "CSS", "SCSS", "Tailwind CSS",
+        "Next.js", "Performance Optimization", "Responsive Design", "Progressive Web Apps"
       ]
     },
     {
-      title: "Backend",
+      title: "Backend Development",
       skills: [
-        "Node.js", "Express", "Python", "PostgreSQL", 
-        "MongoDB", "Redis", "GraphQL", "REST APIs"
+        "Node.js", "Express", "MongoDB", "REST APIs", "Firebase", "Python", "PostgreSQL",
+        "Microservices", "API Design", "Database Optimization", "Cloud Infrastructure"
       ]
     },
     {
-      title: "DevOps & Tools",
+      title: "Tech Art",
       skills: [
-        "AWS", "Docker", "Kubernetes", "Git", 
-        "CI/CD", "Jest", "Webpack", "Vite"
+        "Unity", "Unreal Engine", "PCG", "VAT", "Shaders", "Procedural Tools", "Camera Systems",
+        "Procedural Asset Creation", "Texture Authoring", "Animation Workflows", "VFX", "Material Systems",
+        "Procedural Generation", "Performance Optimization", "Real-time Rendering"
       ]
     },
     {
-      title: "Design & UX",
+      title: "3D Art",
       skills: [
-        "Figma", "Adobe XD", "Responsive Design", "Accessibility", 
-        "User Research", "Prototyping", "Design Systems", "Usability Testing"
+        "Blender", "Substance Painter", "Marvelous Designer", "ZBrush", "Character Creator 4", "iClone 8",
+        "Procedural Modeling", "Texture Baking", "Rigging", "Animation", "Asset Pipeline Development"
+      ]
+    },
+    {
+      title: "AI & Automation",
+      skills: [
+        "ComfyUI", "AI Pipelines", "API Integrations", "N8N Automation", "AI Agents", "Machine Learning",
+        "Neural Networks", "Automated Workflows", "Content Generation", "AI-Assisted Creation"
+      ]
+    },
+    {
+      title: "Programming",
+      skills: [
+        "Python", "Scripting for Automation", "Tool Creation"
       ]
     }
   ];
@@ -44,7 +58,7 @@ export function Skills() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <div 
               key={category.title}
@@ -71,8 +85,33 @@ export function Skills() {
           ))}
         </div>
 
+        {/* Tech Art Showcase */}
+        {/* <div className="mt-20 text-center slide-up">
+          <h3 className="text-3xl font-bold mb-8">
+            <span className="text-gradient">Tech Art</span> Specializations
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            <div className="card-elegant p-6">
+              <div className="text-2xl font-bold text-primary mb-2">PCG</div>
+              <div className="text-sm text-muted-foreground">Procedural Content Generation</div>
+            </div>
+            <div className="card-elegant p-6">
+              <div className="text-2xl font-bold text-primary mb-2">VAT</div>
+              <div className="text-sm text-muted-foreground">Vertex Animation Textures</div>
+            </div>
+            <div className="card-elegant p-6">
+              <div className="text-2xl font-bold text-primary mb-2">Shaders</div>
+              <div className="text-sm text-muted-foreground">Real-time Material Systems</div>
+            </div>
+            <div className="card-elegant p-6">
+              <div className="text-2xl font-bold text-primary mb-2">AI Tools</div>
+              <div className="text-sm text-muted-foreground">ComfyUI & Automation</div>
+            </div>
+          </div>
+        </div> */}
+
         {/* Skills Summary */}
-        <div className="mt-16 text-center slide-up">
+        {/* <div className="mt-16 text-center slide-up">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="space-y-2">
               <div className="text-3xl font-bold text-primary">5+</div>
@@ -87,7 +126,7 @@ export function Skills() {
               <div className="text-muted-foreground">Projects Completed</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
