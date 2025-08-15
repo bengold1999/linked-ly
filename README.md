@@ -1,73 +1,97 @@
-# Welcome to your Lovable project
+# Linked-Ly - Ben Goldberger's Portfolio
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/cc7cc64e-22e6-4c17-a8dd-75e154371b64
+## 🚀 Live Demo
 
-## How can I edit this code?
+Visit: [https://bengold1999.github.io/linked-ly/](https://bengold1999.github.io/linked-ly/)
 
-There are several ways of editing your application.
+## 🛠️ Technologies Used
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Animations**: Framer Motion
+- **3D Graphics**: Three.js, React Three Fiber
+- **Deployment**: GitHub Pages
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cc7cc64e-22e6-4c17-a8dd-75e154371b64) and start prompting.
+## 🚀 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js 18+ 
+- npm or yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone the repository
+git clone https://github.com/bengold1999/linked-ly.git
 
-Follow these steps:
+# Navigate to the project directory
+cd linked-ly
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Install dependencies
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Available Scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-**Use GitHub Codespaces**
+## 🌐 Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow:
 
-## What technologies are used for this project?
+1. Triggers on pushes to the `main` branch
+2. Builds the project using `npm run build`
+3. Deploys the `dist` folder to GitHub Pages
 
-This project is built with:
+### Manual Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+If you need to deploy manually:
 
-## How can I deploy this project?
+```bash
+# Build the project
+npm run build
 
-Simply open [Lovable](https://lovable.dev/projects/cc7cc64e-22e6-4c17-a8dd-75e154371b64) and click on Share -> Publish.
+# The dist folder will be created with the built files
+# Upload the contents of dist/ to your hosting provider
+```
 
-## Can I connect a custom domain to my Lovable project?
+## 📁 Project Structure
 
-Yes, you can!
+```
+src/
+├── components/          # Reusable UI components
+│   ├── effects/        # Animation and visual effects
+│   ├── layout/         # Layout components (Header, Footer)
+│   ├── sections/       # Page sections (Hero, About, Projects, etc.)
+│   └── ui/            # shadcn/ui components
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+└── pages/              # Page components
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🔧 Configuration
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Vite Config**: Configured with base path `/linked-ly/` for GitHub Pages
+- **Tailwind**: Custom configuration with animations and typography
+- **TypeScript**: Strict configuration for type safety
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+**Ben Goldberger** - Full-Stack Developer
+- Portfolio: [https://bengold1999.github.io/linked-ly/](https://bengold1999.github.io/linked-ly/)
+- GitHub: [@bengold1999](https://github.com/bengold1999)
