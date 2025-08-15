@@ -59,7 +59,7 @@ export function Hero() {
           className="tilt-3d"
         >
                      <motion.h1 
-             className="text-5xl md:text-8xl font-bold mb-6 tracking-tight"
+             className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-6 tracking-tight"
              initial={{ scale: 0.8 }}
              animate={{ scale: 1 }}
              transition={{ duration: 1.2, ease: "easeOut" }}
@@ -70,7 +70,7 @@ export function Hero() {
            </motion.h1>
           
           <motion.div 
-            className="text-xl md:text-3xl text-neon mb-6 font-medium min-h-[2em]"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-neon mb-4 md:mb-6 font-medium min-h-[2em]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
@@ -86,7 +86,7 @@ export function Hero() {
           </motion.div>
           
           <motion.p 
-            className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.8 }}
@@ -111,7 +111,7 @@ export function Hero() {
           
           {/* Social Links */}
           <motion.div 
-            className="flex items-center justify-center gap-8"
+            className="flex items-center justify-center gap-6 md:gap-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.6, duration: 0.8 }}
@@ -133,7 +133,7 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.8 + index * 0.1 }}
               >
-                <Icon className="h-12 w-12" />
+                <Icon className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12" />
               </motion.a>
             ))}
           </motion.div>

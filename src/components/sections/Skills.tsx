@@ -49,12 +49,12 @@ export function Skills() {
   return (
     <section id="skills" className="py-20 px-6 bg-card/30">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 slide-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-gradient">Skills</span> & Technologies
+        <div className="text-center mb-12 md:mb-16 slide-up">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
+            Technical <span className="text-gradient">Skills</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A diverse toolkit built through years of hands-on experience and continuous learning
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
+            A comprehensive toolkit spanning web development, game technology, and creative software
           </p>
         </div>
 
@@ -85,48 +85,45 @@ export function Skills() {
           ))}
         </div>
 
-        {/* Tech Art Showcase */}
-        {/* <div className="mt-20 text-center slide-up">
-          <h3 className="text-3xl font-bold mb-8">
-            <span className="text-gradient">Tech Art</span> Specializations
+        <div className="text-center mb-12 md:mb-16 slide-up">
+          <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">
+            Core <span className="text-gradient">Expertise</span>
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            <div className="card-elegant p-6">
-              <div className="text-2xl font-bold text-primary mb-2">PCG</div>
-              <div className="text-sm text-muted-foreground">Procedural Content Generation</div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-12 md:mb-16">
+            <div className="text-center">
+              <div className="text-xl md:text-2xl font-bold text-primary mb-2">PCG</div>
+              <p className="text-sm md:text-base text-muted-foreground">Procedural Content Generation</p>
             </div>
-            <div className="card-elegant p-6">
-              <div className="text-2xl font-bold text-primary mb-2">VAT</div>
-              <div className="text-sm text-muted-foreground">Vertex Animation Textures</div>
+            <div className="text-center">
+              <div className="text-xl md:text-2xl font-bold text-primary mb-2">VAT</div>
+              <p className="text-sm md:text-base text-muted-foreground">Vertex Animation Textures</p>
             </div>
-            <div className="card-elegant p-6">
-              <div className="text-2xl font-bold text-primary mb-2">Shaders</div>
-              <div className="text-sm text-muted-foreground">Real-time Material Systems</div>
+            <div className="text-center">
+              <div className="text-xl md:text-2xl font-bold text-primary mb-2">Shaders</div>
+              <p className="text-sm md:text-base text-muted-foreground">Custom Shader Development</p>
             </div>
-            <div className="card-elegant p-6">
-              <div className="text-2xl font-bold text-primary mb-2">AI Tools</div>
-              <div className="text-sm text-muted-foreground">ComfyUI & Automation</div>
-            </div>
-          </div>
-        </div> */}
-
-        {/* Skills Summary */}
-        {/* <div className="mt-16 text-center slide-up">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="space-y-2">
-              <div className="text-3xl font-bold text-primary">5+</div>
-              <div className="text-muted-foreground">Years Experience</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl font-bold text-primary">30+</div>
-              <div className="text-muted-foreground">Technologies</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl font-bold text-primary">50+</div>
-              <div className="text-muted-foreground">Projects Completed</div>
+            <div className="text-center">
+              <div className="text-xl md:text-2xl font-bold text-primary mb-2">AI Tools</div>
+              <p className="text-sm md:text-base text-muted-foreground">AI-Assisted Pipelines</p>
             </div>
           </div>
-        </div> */}
+          
+          <div className="grid grid-cols-3 gap-4 md:gap-8">
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-bold text-primary">5+</div>
+              <p className="text-sm md:text-base text-muted-foreground">Years Experience</p>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-bold text-primary">30+</div>
+              <p className="text-sm md:text-base text-muted-foreground">Projects Completed</p>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-bold text-primary">50+</div>
+              <p className="text-sm md:text-base text-muted-foreground">Technologies Mastered</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
