@@ -5,64 +5,76 @@ import { Badge } from '@/components/ui/badge';
 export function Projects() {
   const projects = [
     {
-      title: "Procedural Asset Pipeline",
-      description: "Built an AI-assisted procedural asset generation system using ComfyUI and Unreal Engine, reducing asset creation time by 70% for game development teams.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
-      technologies: ["Unreal Engine", "ComfyUI", "Python", "PCG", "AI Pipelines"],
-      liveUrl: "#",
+      title: "HunterCore – AI-Powered Personal Development Platform",
+      description: "I initiated, managed, developed, and designed HunterCore – an AI-powered gamification platform for personal growth. In this project, I acted as the product manager, lead developer, and visionary, working closely with my partner to shape the concept. The platform enables users to track goals, habits, and tasks while enjoying an interactive, personalized experience.",
+      image: null,
+      technologies: ["AI", "Gamification", "Product Management", "Full-Stack Development", "Personal Development"],
+      liveUrl: "https://drive.google.com/file/d/1aLbXYOjnE0z9_PftvTvx-jql9aPMkph3/view?usp=sharing",
       githubUrl: "#",
       featured: true,
       year: "2024"
     },
     {
-      title: "Real-time Shader System",
-      description: "Developed a comprehensive shader library and material system for Unity, featuring procedural generation, performance optimization, and real-time rendering capabilities.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=500&fit=crop",
-      technologies: ["Unity", "HLSL", "Shader Graph", "Procedural Generation", "Performance"],
-      liveUrl: "#",
+      title: "Rot & Roll – Game Demo",
+      description: "I was fully responsible for the complete game design of Rot & Roll, a creative and action-packed demo. My focus was on building the player experience, creating unique gameplay mechanics, and ensuring engaging level design.",
+      image: null,
+      technologies: ["Game Design", "Gameplay Mechanics", "Level Design", "Player Experience", "Game Development"],
+      liveUrl: "https://www.youtube.com/watch?v=1W5n2fLBKvI",
       githubUrl: "#",
       featured: true,
       year: "2024"
     },
     {
-      title: "AI Content Automation Platform",
-      description: "Created an N8N-based automation platform that integrates with ComfyUI, streamlining AI-assisted content creation workflows for creative teams.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=500&fit=crop",
-      technologies: ["N8N", "ComfyUI", "API Integration", "Python", "Automation"],
-      liveUrl: "#",
+      title: "Camera Shake Pack – Unreal Engine Tool for Game & Film Creators",
+      description: "I created a smart Python-based tool that generates a complete Camera Shake Pack for Unreal Engine. This pack is ranked among the top free products on the Epic Games FAB store, offering developers and filmmakers an efficient way to integrate dynamic camera shakes into their projects.",
+      image: null,
+      technologies: ["Unreal Engine", "Python", "Camera Systems", "FAB Store", "Game Tools"],
+      liveUrl: "https://www.fab.com/listings/2a7ed076-9afa-4633-8dcf-b3e45f0b9772",
       githubUrl: "#",
       featured: true,
-      year: "2023"
+      year: "2024"
     },
     {
-      title: "3D Asset Management System",
-      description: "Built a web-based 3D asset management platform with procedural generation tools, texture baking workflows, and asset pipeline optimization.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
-      technologies: ["React", "Node.js", "Blender API", "Substance Painter", "MongoDB"],
+      title: "Procedural Asset Generation Pipeline",
+      description: "Developed a comprehensive procedural generation system for Unreal Engine 5, enabling teams to create scalable content from indie to AAA production. The pipeline includes terrain generation, asset optimization, and automated LOD systems.",
+      image: null,
+      technologies: ["Unreal Engine 5", "PCG", "Procedural Generation", "Python", "Performance Optimization"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false,
-      year: "2023"
+      year: "2024"
+    },
+    
+  
+    {
+      title: "Twitch Streamer Email Automation Tool",
+      description: "I developed a custom automation script that collects emails of Twitch streamers playing specific games of your choice. This tool helps game marketers and developers reach relevant influencers more efficiently.",
+      image: null,
+      technologies: ["Python", "Automation", "Twitch API", "Data Collection", "Marketing Tools"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/bengold1999/streams_Of_Twitch_Mails",
+      featured: false,
+      year: "2024"
     },
     {
-      title: "VAT Animation Pipeline",
-      description: "Developed a Vertex Animation Texture pipeline for Unreal Engine, enabling efficient character animation with reduced memory usage and improved performance.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
-      technologies: ["Unreal Engine", "VAT", "Animation", "Performance", "Shader Development"],
+      title: "Arcade Simulator – Unity Game Project (In Progress)",
+      description: "Currently in development, Arcade Simulator is a Unity-based game project designed to recreate the nostalgic experience of classic arcade environments. My role involves both technical and creative contributions, including interactive UI and physics systems.",
+      image: null,
+      technologies: ["Unity", "Game Development", "Interactive UI", "Physics Systems", "Arcade Games"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false,
-      year: "2023"
+      year: "2024"
     },
     {
-      title: "Procedural Camera System",
-      description: "Created an intelligent camera system for Unity with procedural movement, cinematic sequences, and dynamic framing for interactive experiences.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=500&fit=crop",
-      technologies: ["Unity", "C#", "Camera Systems", "Procedural Generation", "Cinematics"],
-      liveUrl: "#",
+      title: "Epic Games Animation Bootcamp 2023 – Selected Project",
+      description: "I participated in the 2023 Epic Games Animation Bootcamp, where my animation project was selected among the top 50 submissions in the program. The project demonstrates my skills in Unreal Engine animation and cinematic storytelling.",
+      image: null,
+      technologies: ["Unreal Engine", "Animation", "Cinematic Storytelling", "Epic Games", "Bootcamp"],
+      liveUrl: "https://www.youtube.com/watch?v=Zjp4YSgLtTY",
       githubUrl: "#",
       featured: false,
-      year: "2022"
+      year: "2023"
     }
   ];
 
@@ -89,15 +101,6 @@ export function Projects() {
               className="card-elegant group"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="relative overflow-hidden rounded-lg mb-6">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <h3 className="text-xl font-semibold">{project.title}</h3>

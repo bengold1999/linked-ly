@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Palette } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ThreeBackground } from '@/components/effects/ThreeBackground';
 import { TypewriterText } from '@/components/effects/TypewriterText';
@@ -100,13 +100,13 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.3, duration: 0.8 }}
           >
-            <Button size="lg" className="power-up neon-glow group">
+            {/* <Button size="lg" className="power-up neon-glow group">
               <Mail className="mr-2 h-5 w-5 group-hover:animate-pulse" />
               Initialize Contact
-            </Button>
-            <Button variant="outline" size="lg" className="power-up holographic border-primary/30">
+            </Button> */}
+            {/* <Button variant="outline" size="lg" className="power-up holographic border-primary/30">
               Access Portfolio
-            </Button>
+            </Button> */}
           </motion.div>
           
           {/* Social Links */}
@@ -117,9 +117,10 @@ export function Hero() {
             transition={{ delay: 1.6, duration: 0.8 }}
           >
             {[ 
-              { href: "https://github.com", icon: Github, label: "GitHub Profile" },
+              { href: "https://github.com/bengold1999", icon: Github, label: "GitHub Profile" },
+              { href: "https://cara.app/bengold1999", icon: Palette , label: "Artstation Profile" },
               { href: "https://www.linkedin.com/in/ben-goldberger-290b8b23a/", icon: Linkedin, label: "LinkedIn Profile" },
-              { href: "mailto:ben@example.com", icon: Mail, label: "Email Contact" }
+              { href: "mailto:bengold1999@gmail.com", icon: Mail, label: "Email Contact" }
             ].map(({ href, icon: Icon, label }, index) => (
               <motion.a
                 key={label}
@@ -127,12 +128,12 @@ export function Hero() {
                 className="text-muted-foreground hover:text-primary transition-all duration-300 power-up"
                 aria-label={label}
                 whileHover={{ scale: 1.2, rotate: 5 }}
-                whileTap={{ scale: 0.9 }}
+                whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.8 + index * 0.1 }}
               >
-                <Icon className="h-7 w-7" />
+                <Icon className="h-12 w-12" />
               </motion.a>
             ))}
           </motion.div>
