@@ -106,8 +106,7 @@ export function About() {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            I'm Ben Goldberger — a passionate developer, tech artist, and creative entrepreneur 
-            who blends engineering, art, and storytelling into interactive experiences
+            Developer • Artist • Entrepreneur
           </p>
         </div>
 

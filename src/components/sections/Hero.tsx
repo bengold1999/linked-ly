@@ -91,7 +91,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.8 }}
           >
-            Blending tech, art, and product vision to create experiences that inspire
+            Developer • Artist • Entrepreneur
           </motion.p>
           
           <motion.div 
