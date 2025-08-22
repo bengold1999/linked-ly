@@ -123,18 +123,32 @@ export function Projects() {
                 </div>
                 
                 <div className="flex items-center gap-4 pt-2">
-                  <Button size="sm" asChild>
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                  {project.liveUrl && project.liveUrl !== "#" ? (
+                    <Button size="sm" asChild>
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Live Demo
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button size="sm" disabled>
                       <ExternalLink className="mr-2 h-4 w-4" />
                       Live Demo
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    </Button>
+                  )}
+                  {project.githubUrl && project.githubUrl !== "#" ? (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-2 h-4 w-4" />
+                        Code
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button variant="outline" size="sm" disabled>
                       <Github className="mr-2 h-4 w-4" />
                       Code
-                    </a>
-                  </Button>
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
@@ -175,18 +189,32 @@ export function Projects() {
                 </div>
                 
                 <div className="flex items-center gap-2">
-                  <Button size="sm" variant="outline" asChild>
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                  {project.liveUrl && project.liveUrl !== "#" ? (
+                    <Button size="sm" variant="outline" asChild>
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-1 h-3 w-3" />
+                        Demo
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button size="sm" variant="outline" disabled>
                       <ExternalLink className="mr-1 h-3 w-3" />
                       Demo
-                    </a>
-                  </Button>
-                  <Button size="sm" variant="outline" asChild>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    </Button>
+                  )}
+                  {project.githubUrl && project.githubUrl !== "#" ? (
+                    <Button size="sm" variant="outline" asChild>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-1 h-3 w-3" />
+                        Code
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button size="sm" variant="outline" disabled>
                       <Github className="mr-1 h-3 w-3" />
                       Code
-                    </a>
-                  </Button>
+                    </Button>
+                  )}
                 </div>
               </div>
             ))}

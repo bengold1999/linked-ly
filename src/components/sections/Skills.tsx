@@ -85,45 +85,7 @@ export function Skills() {
           ))}
         </div>
 
-        <div className="text-center mb-12 md:mb-16 slide-up">
-          <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">
-            Core <span className="text-gradient">Expertise</span>
-          </h3>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-12 md:mb-16">
-            <div className="text-center">
-              <div className="text-xl md:text-2xl font-bold text-primary mb-2">PCG</div>
-              <p className="text-sm md:text-base text-muted-foreground">Procedural Content Generation</p>
-            </div>
-            <div className="text-center">
-              <div className="text-xl md:text-2xl font-bold text-primary mb-2">VAT</div>
-              <p className="text-sm md:text-base text-muted-foreground">Vertex Animation Textures</p>
-            </div>
-            <div className="text-center">
-              <div className="text-xl md:text-2xl font-bold text-primary mb-2">Shaders</div>
-              <p className="text-sm md:text-base text-muted-foreground">Custom Shader Development</p>
-            </div>
-            <div className="text-center">
-              <div className="text-xl md:text-2xl font-bold text-primary mb-2">AI Tools</div>
-              <p className="text-sm md:text-base text-muted-foreground">AI-Assisted Pipelines</p>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-3 gap-4 md:gap-8">
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-primary">5+</div>
-              <p className="text-sm md:text-base text-muted-foreground">Years Experience</p>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-primary">30+</div>
-              <p className="text-sm md:text-base text-muted-foreground">Projects Completed</p>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-primary">50+</div>
-              <p className="text-sm md:text-base text-muted-foreground">Technologies Mastered</p>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
